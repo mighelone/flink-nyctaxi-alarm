@@ -11,3 +11,8 @@ flink run -c org.example.WordCount /path/to/your/project/my-app/target/scala-2.1
 
 You can also run your application from within IntelliJ:  select the classpath of the 'mainRunner' module in the run/debug configurations.
 Simply open 'Run -> Edit configurations...' and then select 'mainRunner' from the "Use classpath of module" dropbox. 
+
+Taken from
+
+https://www.infoworld.com/article/3293426/how-to-build-stateful-streaming-applications-with-apache-flink.html
+
