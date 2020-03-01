@@ -12,3 +12,4 @@ project/plugins/project/
 
 project/build.properties
 project/metals.sbt
+.idea
