@@ -35,7 +35,7 @@ object TaxiRides {
         val parsedRow = env
             .readFile(inputFormat, filePath = csvFile).setParallelism(1)
 
-        parsedRow.map(new RideMapper) //.assignTimestampsAndWatermarks((ride: TaxiRide)=> ride.dropOffTime)            
+        parsedRow.map(new RideMapper).assignAscendingTimestamps(_.dropOffTime)            
     }
 
     class RideMapper extends RichMapFunction[Row, TaxiRide] {
